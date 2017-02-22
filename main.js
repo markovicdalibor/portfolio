@@ -49,7 +49,7 @@ var interval;
 
 function startSlajder(){
 	interval = setInterval(function(){
-		slideContainer.animate({'marginLeft':'-=100vw'},4000,function(){
+		slideContainer.animate({'marginLeft':'-=100vw'},1000,function(){
 			current++;
 			if(current==slides.length){
 				current=1;
