@@ -12,9 +12,15 @@ jQuery(document).ready(function(){
 		//model.addClass("model");
 		modImg.src=this.src;
 		modImg.alt=this.alt;
-	})
+	});
 	close.on('click',function(){
 		model.css('display','none');
-	})
+	});
+	var modal = document.getElementById('model');
+	window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        modal.style.cursor='pointer';
+    }};
 	
 });
