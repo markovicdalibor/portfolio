@@ -8,7 +8,7 @@ body{
 .jumbotron{
 	margin: 0;
 	color: white;
-	background-image: url('put.jpg');
+	background-image: url('img/put.jpg');
 	background-repeat: no-repeat;
 }
 #naslov{
@@ -43,13 +43,13 @@ body{
 	position:fixed;
 	top:0;
 	opacity:0.9;
-	z-index:100;/*da sve ide ispod meni bara kada se zalepi na vrhu*/
+	z-index:1;/*da sve ide ispod meni bara kada se zalepi na vrhu*/
 }
 /*krajNavMenu*/
 #drugi{
 	text-align:center;
 	width:100vw;
-	background-image: url('put.jpg');
+	background-image: url('img/put.jpg');
 	color:snow;
 }
 #drugi p{
@@ -60,17 +60,18 @@ body{
 	position:fixed;
 	width:100%;
 	height:100%;
-	background-color:black;
-	z-index:200;
-	opacity:0.9;
+	background-color:#606060;
+	z-index:2;
 }
 
-#img01{
+#holder{
 	margin:200px auto;
     display: block;
-    width: 80%;
+    width: 50%;
+	height: 50%;
     max-width: 700px;
 	border: 2px solid snow;
+	cursor: pointer;
 }
 .close {
     position: absolute;
