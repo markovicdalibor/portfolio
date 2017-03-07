@@ -26,7 +26,7 @@ jQuery(document).ready(function(){
 		switch(sl){
 			case "pimage/preporuka.jpg":
 			holder.empty()
-			holder.append('<img src="pimage/digi.jpg" width="100%">')
+			holder.append('<img src="pimage/digi.jpg" width="50%" height="50%">')
 			break;
 			case "pimage/digi.jpg":
 			holder.empty()
