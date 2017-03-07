@@ -26,15 +26,15 @@ jQuery(document).ready(function(){
 		switch(sl){
 			case "pimage/preporuka.jpg":
 			holder.empty()
-			holder.append('<img src="pimage/digi.jpg" width="50%" height="50%">')
+			holder.append('<img src="pimage/digi.jpg" width="100%">')
 			break;
 			case "pimage/digi.jpg":
 			holder.empty()
-			holder.append('<img src="pimage/port.jpg" width="50%" height="50%">')
+			holder.append('<img src="pimage/port.jpg" width="100%">')
 			break;
 			case "pimage/port.jpg":
 			holder.empty()
-			holder.append('<img src="pimage/preporuka.jpg" width="50%" height="50%">')
+			holder.append('<img src="pimage/preporuka.jpg" width="100%">')
 			break;
 		}
 	});
