@@ -1,26 +1,41 @@
 jQuery(document).ready(function(){
 
 	var model = $("#model");
-	var modelImg = $('#img01');
+	var holder = $('#holder');
 	var close = $('.close')
 	var images = $('.img>img');
-
-	var modImg=document.getElementById('img01');
+	var i=0;
 
 	$(images).on('click', function(){
 		model.css('display','block');
-		//model.addClass("model");
-		modImg.src=this.src;
-		modImg.alt=this.alt;
-	});
+		var self = $(this);
+		var copy = self.clone();
+		copy.css({position:'absolte',
+		width:holder.width(),
+		height:holder.height()});
+			holder.append(copy);
+		});
+		
 	close.on('click',function(){
 		model.css('display','none');
+		holder.empty();
 	});
-	var modal = document.getElementById('model');
-	window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-        modal.style.cursor='pointer';
-    }};
 	
+	holder.on('click',function(){
+		var sl = $('#holder>img').attr('src');
+		switch(sl){
+			case "pimage/preporuka.jpg":
+			holder.empty()
+			holder.append('<img src="pimage/digi.jpg" width="100%">')
+			break;
+			case "pimage/digi.jpg":
+			holder.empty()
+			holder.append('<img src="pimage/port.jpg" width="100%">')
+			break;
+			case "pimage/port.jpg":
+			holder.empty()
+			holder.append('<img src="pimage/preporuka.jpg" width="100%">')
+			break;
+		}
+	});
 });
