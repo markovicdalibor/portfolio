@@ -30,11 +30,11 @@ jQuery(document).ready(function(){
 			break;
 			case "pimage/digi.jpg":
 			holder.empty()
-			holder.append('<img src="pimage/port.jpg" width="100%">')
+			holder.append('<img src="pimage/port.jpg" width="50%" height="50%">')
 			break;
 			case "pimage/port.jpg":
 			holder.empty()
-			holder.append('<img src="pimage/preporuka.jpg" width="100%">')
+			holder.append('<img src="pimage/preporuka.jpg" width="50%" height="50%">')
 			break;
 		}
 	});
