@@ -43,13 +43,13 @@ body{
 	position:fixed;
 	top:0;
 	opacity:0.9;
-	z-index:1;/*da sve ide ispod meni bara kada se zalepi na vrhu*/
+	z-index:1;
 }
 /*krajNavMenu*/
 #drugi{
 	text-align:center;
 	width:100vw;
-	background-image: url('img/put.jpg');
+	background-image: url('put.jpg');
 	color:snow;
 }
 #drugi p{
