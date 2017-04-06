@@ -6,6 +6,7 @@
 	<link rel="icon" type="image/gif" href="img/dm.jpg" sizes="16x16">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="model" class="model">
@@ -68,7 +69,7 @@
 				<div class="desc">
 					<div class="overlay"></div>
 					<h3>Preporuka za putovanje</h3>
-					<p>Blog-sajt, koji daje predloge i ideje kako i gde iskoristiti slobodno vreme.</p>
+					<p>Website that gives suggestions and ideas on how and where to take advantage of free time.</p>
 				</div>
 			</div>
 		</div>
@@ -79,7 +80,7 @@
 				<div class="desc">
 					<div class="overlay"></div>
 					<h3>Kablovsak televizija</h3>
-					<p>Sajt, za predstavljanje ponude kablovske televizije.</p>
+					<p>Website for the presentation of offers cable television.</p>
 				</div>
 			</div>
 		</div>
@@ -90,7 +91,7 @@
 				<div class="desc">
 					<div class="overlay"></div>
 					<h3>Portfolio</h3>
-					<p>Sajt, za promociju u i poslovnu ponudu.</p>
+					<p>Website for promotion and job offers</p>
 				</div>
 			</div>
 		</div>
@@ -110,38 +111,39 @@
 	<div id ="cetvrti">
 		<div class="prijava">
 			<h1>Contact
-			<span>Molim Vas popunite sva polja</span>
+			<span>Please complete all fields</span>
 			</h1>
-			<label>
-				<span>Vase ime i prezime:</span>
-				<input id = "inp1" type = 'text' placeholder = 'Vase ime i prezime'>
-			</label>
-			<label>
-				<span>Vase e-mail adresa:</span>
-				<input id = "inp2" type = 'email' placeholder = 'Vasa e-mail adresu'>
-			</label>
-			<label>
-				<span>Vase kontakt telefon:</span>
-				<input id = "inp3" type = 'tel' placeholder = 'Vas kontakt telefon'>
-			</label>
-			<label>
-				<span>Kontakt za:</span>
-				<select id="select">
-					<option value="option">-izaberi opciju-</option>
-					<option value="posao">Poslovni kontakt</option>
-					<option value="prijateljstvo">Prijateljski kontakt</option>
-				</select>
-			</label>
-			<label>
-				<span>prijavi se:</span>
-				<input type='button' id="sendtn" class="button btn" value="Send">
-			</label>
+			<form class="form-horizontal">
+	<div class="form-group">
+    <label for="inp1" class="col-sm-2 control-label">Name:</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inp1" placeholder="Enter Your Name" value="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inp2" class="col-sm-2 control-label">Tel.</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inp2" placeholder="Enter Your Phon Number">
+    </div>
+  </div>
+  <div class="form-group">
+  	<label for="inp3" class="col-sm-2 control-label">E-mail:</label>
+    <div class="col-sm-9">
+    <input type="email" class="form-control" id="inp3" placeholder="Enter Your Email Adress">
+    </div>
+  </div>
+  	<div class="form-group">
+  		<div class="col-sm-2 col-sm-offset-5">
+      <button type="submit" class="btn btn-default" id="btn">Sign in</button>
+      	</div>
+    </div>
+</form>
+			
 		</div>
 	</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <script src="main.js"></script>
 <script src="portfolio.js"></script>
-<script src="validacija.js"></script>
 <script src = "scroll.js"></script>
 </body>
 </html>
