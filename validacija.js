@@ -10,7 +10,6 @@ jQuery(document).ready(function ($) {
 	tel.on('focus',clear);
 	mail.on('focus',clear);
 	function validacija() {
-		 if(name.val()==='Ovo polje je obavezno!!!'){clear();};
 		test = 0;
 		if(name.val()==''){
 			name.val('Ovo polje je obavezno!!!');
