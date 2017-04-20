@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 			name.val('Ovo polje je obavezno!!!');
 			name.css({'color':'red','textAlign':'center'});
 			test = 1;
-		};
+		};else if(name.val()=='Ovo polje je obavezno!!!'){alert ('oho');};
 		if (tel.val()=='') {
 			tel.val('Ovo polje je obavezno!!!');
 			tel.css({'color':'red','textAlign':'center'});
