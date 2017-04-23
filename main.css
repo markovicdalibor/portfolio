@@ -229,3 +229,10 @@ height: 100%;
 	opacity: 1;
 	transition:3s ease ;
 }
+#sech{
+	border:2px solid snow;
+	border-radius: 10px;
+	margin:15em;
+	text-align: center;
+	color:snow;
+}
