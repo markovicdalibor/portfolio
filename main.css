@@ -1,0 +1,270 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(img/bg.jpg);
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#wrapp{
+	margin: 10px 50px;
+}
+#btn a{
+	text-decoration:none;
+	color: #000;
+}
+.jumbotron{
+	margin: 0;
+	color:snow;
+	background-image: url('img/bg.jpg');
+	background-repeat: no-repeat;
+	border:3px solid #c5c5c5;
+	border-radius:10px;
+	box-shadow: 10px 10px 10px black;
+}
+#naslov{
+	margin: 0 auto;
+	color:snow;
+	background-color: #000;
+	border-bottom: 5px solid #c5c5c5;
+	border-radius:10px;
+	opacity: 0.6;
+}
+/*NavMenu*/
+#navmenu{
+	margin:0;
+	padding:2px;
+	width:100%;
+	height:45px;
+	background-image: url('img/bg.jpg');
+	border-bottom: 2px solid #c5c5c5;
+}
+#navmenu ul li{
+	padding:10px 25px;
+	list-style:none;
+	border-right:2px solid #c5c5c5;
+	border-radius:5px;
+	float:left;
+}
+#navmenu a{
+	text-decoration:none;
+	font-weight: bold;
+	color:snow;
+}
+.fixmenu{
+	width: 100%;
+	position:fixed;
+	top:0;
+	left: 0;
+	z-index:1;/*da sve ide ispod meni bara kada se zalepi na vrhu*/
+}
+/*krajNavMenu*/
+#drugi{
+	text-align:center;
+	width:100%;
+	color:snow;
+}
+#drugi p{
+	font-size:11px;
+}
+.model{
+	top: 0;
+	left: 0;
+	display:none;
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:#606060;
+	z-index:2;
+}
+
+#holder{
+	margin:200px auto;
+    display: block;
+    width: 50%;
+	height: 50%;
+    max-width: 700px;
+	border: 2px solid snow;
+	cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+}
+/*slajder*/
+.slides{
+    display: block;
+    width: 1000vw;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+#slider .slide{
+	width:100vw;
+	height:500px;
+	float:left;
+}
+#slider{
+	color:snow;
+	cursor:pointer;
+	width:100%;
+	height:500px;
+	overflow:hidden;
+	/*border:3px solid #c5c5c5;
+	border-radius:10px;*/
+	box-shadow: 10px 10px 10px black;
+}
+
+h1, h2, h3{
+	text-align:center;
+}
+/*portfolio*/
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 33.333333333%;
+}
+.img{
+	margin-top:10px;
+	margin-bottom:10px;
+	cursor:pointer;
+	/*border:3px solid #c5c5c5;
+	border-radius:10px;*/
+	overflow:hidden;
+	box-shadow: 10px 10px 10px black;
+}
+.desc{
+	position:relative;
+	padding:20px;
+	text-align:center;
+	font-size:1.3em;
+	font:bold;
+}
+/*about me*/
+#about{
+	width:70%;
+	margin:10px auto;
+	padding:20px;
+	color:snow;
+	border:3px solid #c5c5c5;
+	border-radius:10px;
+	box-shadow: 10px 10px 10px black;
+}
+#about h1,#about h3,#about p{
+	background-color: #606060;
+		box-shadow: 10px 10px 10px black;
+}
+#cetvrti{
+	padding:10px;
+	padding: 20px 30px 20px 30px;
+}
+.prijava{
+	width:60%;
+	margin:10px auto;
+	border:2px solid #c5c5c5;
+	border-radius: 10px;
+	color: snow;
+	box-shadow: 10px 10px 10px black;
+}
+.prijava h1>span{
+	display:block;
+	font-size:11px;
+}
+.prijava label{
+	display:block;
+	padding:0 0 5px;
+}
+.prijava label>span{
+  float: left;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.overlay{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:0;
+	background-color:#606060;
+	overflow:hidden;
+	transition:0.3s ease;
+	opacity:0.7;
+}
+.img:hover .overlay {
+height: 100%;
+}
+.img:hover .img{
+	opacity:0.5;
+}
+#scroll{
+	height:50px;
+
+}
+#scroll{
+	font-size:2em;
+	font-weight: bold;
+}
+#peti{
+	width: 100%;
+	height: 20em;
+	color: #1e90ff;
+}
+.to{
+	opacity: 0;
+}
+.to0{
+	opacity: 0;
+}
+.to01{
+	opacity: 0;
+}
+.to1{
+	opacity: 1;
+	transition:3s ease ;
+}
+#sech{
+	margin:15em;
+	text-align: center;
+	color:snow;
+	box-shadow: 10px 10px 10px black;
+}
+#footer{
+	width:100%;
+	margin:0 auto;
+	height:22vw;
+	background-color:#000;
+	opacity:0.7;
+}
+.foo{
+	color:snow;
+	height:19vw;
+	border-right:1px solid #c5c5c5;
+}
+.foo a{
+	color:snow;
+	text-decoration:none;
+}
+.foot{
+	height:2vw;
+	text-align: center;
+	color: snow;
+}
+#design{
+	margin:-10px;
+	color:snow;
+	font-size: 3em;
+	opacity: 0;
+}
