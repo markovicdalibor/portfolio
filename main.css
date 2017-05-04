@@ -239,6 +239,8 @@ height: 100%;
 	margin:15em;
 	text-align: center;
 	color:snow;
+	border-top:1px solid #c5c5c5;
+	border-left:1px solid #c5c5c5;
 	box-shadow: 10px 10px 10px black;
 }
 #footer{
