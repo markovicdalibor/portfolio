@@ -43,8 +43,7 @@ jQuery(document).ready(function ($) {
 		$(this).val('');
 		$(this).css({'color':'black','textAlign':'left'});
 	};
-		var korisnik = $('#korisnik');
-		var x = $('#sech');
-		x.append("<h1 style='text-align:center;color:snow;'>Uspesno ste se prijavili<br>Hvala :)</h1>");
+		var sech = $('#sech');
+		sech.append("<h1 style='text-align:center;color:snow;'>Uspesno ste se prijavili<br>Hvala :)</h1>");
 		
 });
