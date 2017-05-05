@@ -10,12 +10,13 @@
 </head>
 <body>
 <div id="wrapp">
+<!--ovo je zajebancija kada se klikne na sliku iz portfolio-->
 	<div id="model" class="model">
 		<span class="glyphicon glyphicon-remove close"></span>
-		<div id="holder">
-
+		<div id="holder"><!--ovo je mesto de se ubacuje slika-->
 		</div>
 	</div>
+<!--od ovde vazi-->
 	<div id="prvi">
 		<div class="jumbotron text-center container-fluid">
 			<div id="naslov">
@@ -29,7 +30,7 @@
 			<h4 class="pull-right" id="vreme">ovde ide vreme</h4>
 		</div>
 <!-- NavMenu-->
-		<div id="navmenu">
+		<nav id="navmenu">
 			<ul>
 				<a href="#prvi"><li>Home</li></a>
 				<a href="#drugi"><li>Portfolio</li></a>
@@ -37,34 +38,34 @@
 				<a href="#cetvrti"><li>Contact</li></a>
 			</ul>
 			<h2 id="design">Dalibor Markovic - WEB design</h2>
-		</div>
+		</nav>
 	</div>
-<!--kraj NavMenu-->
+<!--Slajder-->
 	<div id='slider'>
-		<div class='slides'>
-			<div class='slide'>
+		<div id='boxsimg'>
+			<div class='simg'>
 				<h1>Python</h1>
 				<img src='img/01.jpg'width="100%" height="100%">
 			</div>
-			<div class='slide'>
+			<div class='simg'>
 				<h1>HTML&CSS</h1>
 				<img src='img/02.jpg'width="100%" height="100%">
 			</div>
-			<div class='slide'>
+			<div class='simg'>
 				<h1>JavaScript</h1>
 				<img src='img/03.jpg'width="100%" height="100%">
 			</div>
-			<div class='slide'>
+			<div class='simg'>
 				<h1>Phyton</h1>
 				<img src='img/01.jpg'width="100%" height="100%">
 			</div>
 		</div>
 	</div>
 <!--Portfolio-->
-	<div id="drugi"class="row">
+	<div id="drugi" class="row">
 	<h2>Portfolio</h2>
-		<div class="responsive">
-			<div class="img to">
+		<div class="col-sm-4">
+			<div class="img opa01">
 				<img src="pimage/preporuka.jpg" width="100%">
 				<div class="desc">
 					<div class="overlay"></div>
@@ -73,9 +74,8 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="responsive">
-			<div class="img to">
+		<div class="col-sm-4">
+			<div class="img opa01">
 				<img src="pimage/digi.jpg" width="100%">
 				<div class="desc">
 					<div class="overlay"></div>
@@ -84,9 +84,8 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="responsive">
-			<div class="img to">
+		<div class="col-sm-4">
+			<div class="img opa01">
 				<img src="pimage/port.jpg" width="100%">
 				<div class="desc">
 					<div class="overlay"></div>
@@ -95,10 +94,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 <!--About-->
 	<div id='treci'>
-		<div  id="about" class="to0">
+		<div  id="about" class="opa02">
 			<h1>Dalibor Marković</h1><hr>
 			<h3>WEB design</h3>
 			<p>My name is Dalibor Marković and I am dealing with web design.<br>
@@ -109,11 +108,11 @@
 		</div>
 	</div>
 	<div id ="cetvrti">
-		<div class="prijava to01">
+		<div class="prijava opa03">
 			<h1>Contact
 			<span>Please complete all fields</span>
 			</h1>
-			<form class="form-horizontal">
+<form class="form-horizontal">
 	<div class="form-group">
     <label for="inp1" class="col-sm-2 control-label">Name:</label>
     <div class="col-sm-9">
@@ -132,35 +131,41 @@
     <input type="email" class="form-control" id="inp3" placeholder="Enter Your Email Adress">
     </div>
   </div>
-  	<div class="form-group">
+  <div class="form-group">
   		<div class="col-sm-2 col-sm-offset-5">
     	<button type="submit" class="btn btn-default" id="btn"><a  href="#cetvrti">Sign in</a></button>
       	</div>
-    </div>
+   </div>
 </form>
 
 		</div>
 	</div>
 </div>
-	<div id="footer" class="row responsive">
+<div id="footer" class="row">
 		<div class="col-sm-4 foo"><h3>Contact</h3><hr><br>
 		<ul>
 			<li>tel.062424573</li>
 			<li>e-mail:dalibor.n.markovic@outlook.com</li>
-			<li>adress:Mome Stanojlovica 7b/7; 11090 Rakovica/Belgrade Serbia</li>
+			<li>adress:Momoe Stanojlovica 7b/7; 11090 Rakovica/Beograd Serbia</li>
 		</ul>
 		</div>
 		<div class="col-sm-4 foo"><h3>About</h3><hr><br>
 		<p> I finished courses: HTML5 and CSS3, JavaSript, Python<br>frameworks:Bootstrap, jQuery, AnglarJS<br>If you want to work with me in the realization of your business plans, contact me.</p>
 		</div>
 		<div class="col-sm-4 foo"><h3>Social Network</h3><hr><br>
-			<p><a href="#"><img src = "img/fb.JPG" alt = "facebook" width="30em" height="30em"> facebook</a></p>
-			<p><a href="#"><img src = "img/you.JPG" alt = "youtube" width="30em" height="30em"> YouTube</a></p>
-			<p><a href="#"><img src = "img/twit.JPG" alt="twiter" width="30em" height="30em"> twitter</a></p>
-			<p><a href="#"><img src = "img/ist.JPG" alt="instagram" width="30em" height="30em"> instagram</a></p>
+			<div class="row col-sm-offset-2">
+			<div class="col-sm-6">
+				<p><a href="#"><img src = "img/fb.jpg" alt = "facebook" width="30em" height="30em"> facebook</a></p>
+				<p><a href="#"><img src = "img/you.jpg" alt = "youtube" width="30em" height="30em"> YouTube</a></p>
+			</div>
+			<div class="col-sm-6">
+				<p><a href="#"><img src = "img/twit.jpg" alt="twiter" width="30em" height="30em"> twitter</a></p>
+				<p><a href="#"><img src = "img/ist.jpg" alt="instagram" width="30em" height="30em"> instagram</a></p>
+			</div>
+			</div>
 		</div>
 		<div class="col-sm-12 foot"><h5>Copyright© 2017 Dalibor Markovic - WEB design<h5></div>
-	</div>
+</div>
 <script src="main.js"></script>
 <script src="portfolio.js"></script>
 <script src="validacija.js"></script>
