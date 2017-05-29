@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MyPortfolio</title>
+	<link rel="icon" type="image/gif" href="img/dm.jpg" sizes="16x16">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<!--ovo je zajebancija kada se klikne na sliku iz portfolio-->
+		<div id="model" class="model">
+			<span class="glyphicon glyphicon-remove close"></span>
+			<div id="holder"><!--ovo je mesto de se ubacuje slika-->
+			</div>
+		</div>
+	<!--od ovde vazi-->
+<div id="wrapp">
+	<div id="prvi">
+		<div class="jumbotron text-center container-fluid">
+			<div id="naslov">
+				<h1 id="scroll1"></h1>
+				<hr>
+				<div id="scroll">
+				<h3 id="scroll2"></h3>
+				</div>
+			</div>
+			<h4 class="pull-left" id='datum'>ovde ide datum</h4>
+			<h4 class="pull-right" id="vreme">ovde ide vreme</h4>
+		</div>
+	</div>
+<!-- NavMenu-->
+		<nav class="navbar" id="navmenu">
+			<ul>
+				<a href="#prvi"><li>Home</li></a>
+				<a href="#drugi"><li>About</li></a>
+				<a href="#treci"><li>Portfolio</li></a>
+				<a href="#cetvrti"><li>Contact</li></a>
+			</ul>
+			<h2 id="design">Dalibor Markovic - WEB design</h2>
+		</nav>
+	<!--Skill-->
+	<div id="skill" class="row">
+			<h2>Skills</h2>
+			<div class="col-sm-4 box" id="htmlcss">
+				<div class="ski front"><h2>HTML&CSS</h2><hr>
+				<p><mark>HTML</mark><br>
+HyperTextMarkupLanguage is used to structure TXT, media and links on the website.<br>
+<mark>CSS</mark>
+Cascading Style Sheets is used for layout and presentation position. Today, HTML and CSS can not be separated.</p>
+				</div>
+				<div class="back">
+					<h2>HTML&CSS</h2><hr>
+					<h4>my level</h34>
+					<div id="myProgress">
+						<div class="myBar"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 box" id="javascript">
+				<div class="ski front"><h2>JavaScrip</h2><hr>
+				<p><mark>JavaScript</mark> provides dynamism and interactivity on websites.
+With its frimeworks (JQuery, AngulaJS i Nodjs) becomes powerful.</p>
+				</div>
+				<div class="back">
+					<h2>JavaScrip</h2><hr>
+					<h4>my level</h34>
+					<div id="myProgress">
+						<div class="myBar"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 box" id="python">
+				<div class="ski front"><h2>Python</h2><hr>
+				<p><mark>Python</mark> is a powerful programming language used to develop web applications, and more.</p>
+				</div>
+				<div class="back">
+					<h2>Python</h2><hr>
+					<h4>my level</h34>
+					<div id="myProgress">
+						<div class="myBar"></div>
+					</div>
+				</div>
+			</div>
+	</div>
+<!--About-->
+	<div id='drugi'>
+		<div  id="about" class="opa02">
+			<h1>Dalibor Marković</h1><hr>
+			<h3>WEB design</h3>
+			<p>My name is Dalibor Marković and I am dealing with web design.<br>
+			I studied at the Faculty of Transport and Traffic Engeenering and I worked as a promoter and as a support in customer service in Euro-Bank and in the cable TV.<br>
+			More than two years I finished the course Python and entered the world of programming.<br>
+			Since I love to travel by bicycle, and I made a website about traveling through Serbia and got into web design. I finished courses HTML5 and CSS3 and JavaSript. I'm trying to have all the ideas implemented 100%.<br>
+			If you want to work  with me in the realization of your business plans, contact me.</p>
+		</div>
+	</div>
+<!--Portfolio-->
+	<div id="treci" class="row">
+	<h2 class="opa01">Portfolio</h2>
+		<div class="col-sm-4">
+			<div class="img opa01">
+				<img src="pimage/preporuka.jpg" width="100%">
+				<div class="desc">
+					<div class="overlay"></div>
+					<h3>Preporuka za putovanje</h3>
+					<p>Website that gives suggestions on how take advantage of free time.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="img opa01">
+				<img src="pimage/digi.jpg" width="100%">
+				<div class="desc">
+					<div class="overlay"></div>
+					<h3>Kablovska televizija</h3>
+					<p>Website for the presentation of offers cable television.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="img opa01">
+				<img src="pimage/port.jpg" width="100%">
+				<div class="desc">
+					<div class="overlay"></div>
+					<h3>Portfolio</h3>
+					<p>Website for promotion and job offers</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div id ="cetvrti">
+		<div class="prijava opa03">
+			<h1>Contact
+			<span>Please complete all fields</span>
+			</h1>
+<form class="form-horizontal">
+	<div class="form-group">
+    <label for="inp1" class="col-sm-2 control-label">Name:</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inp1" placeholder="Enter Your Name" value="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inp2" class="col-sm-2 control-label">Tel.</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inp2" placeholder="Enter Your Phon Number">
+    </div>
+  </div>
+  <div class="form-group">
+  	<label for="inp3" class="col-sm-2 control-label">E-mail:</label>
+    <div class="col-sm-9">
+    <input type="email" class="form-control" id="inp3" placeholder="Enter Your Email Adress">
+    </div>
+  </div>
+  <div class="form-group">
+  		<div class="col-sm-2 col-sm-offset-5">
+    	<button type="submit" class="btn btn-default" id="btn"><a  href="#cetvrti">Sign in</a></button>
+      	</div>
+   </div>
+</form>
+
+		</div>
+	</div>
+</div>
+<div id="footer" class="row">
+		<div class="col-sm-4 foo"><h3>Contact</h3><hr><br>
+		<ul>
+			<li>tel.062424573</li>
+			<li>e-mail:dalibor.n.markovic@outlook.com</li>
+			<li>adress:Mome Stanojlovica 7b/7; 11090 Rakovica/Beograd Serbia</li>
+		</ul>
+		</div>
+		<div class="col-sm-4 foo"><h3>About</h3><hr><br>
+		<p> I finished courses: HTML5 and CSS3, JavaSript, Python<br>frameworks:Bootstrap, jQuery, AnglarJS<br>If you want to work with me in the realization of your business plans, contact me.</p>
+		</div>
+		<div class="col-sm-4 foo"><h3>Social Network</h3><hr><br>
+			<div class="row col-sm-offset-2">
+			<div class="col-sm-6">
+				<p><a href="https://www.facebook.com/dalibor.markovic.16" target="_blank"><img src = "img/fb.JPG" alt = "facebook" width="30em" height="30em"> facebook</a></p>
+				<p><a href="https://www.youtube.com/watch?v=JvUn8HnLFuA&t=222s" target="_blank"><img src = "img/you.JPG" alt = "youtube" width="30em" height="30em"> YouTube</a></p>
+			</div>
+			<div class="col-sm-6">
+				<p><a href="#" target="_blank"><img src = "img/twit.JPG" alt="twiter" width="30em" height="30em"> twitter</a></p>
+				<p><a href="#" target="_blank"><img src = "img/ist.JPG" alt="instagram" width="30em" height="30em"> instagram</a></p>
+			</div>
+			</div>
+		</div>
+		<div class="col-sm-12 foot"><h5>Copyright© 2017 Dalibor Markovic - WEB design<h5></div>
+</div>
+<script src = "js/main.js"></script>
+<script src = "js/portfolio.js"></script>
+<script src = "js/validacija.js"></script>
+<script src = "js/scroll.js"></script>
+<script src = "js/bar.js"></script>
+</body>
+</html>
