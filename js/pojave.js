@@ -16,5 +16,5 @@ show(opa.eq(0),-150);
 // da se pojavi portfolio
 show(opa.eq(1),150);
 // da se pojavi contac
-show(opa.eq(2),350);
+show(opa.eq(2),450);
 });
