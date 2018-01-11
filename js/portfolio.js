@@ -41,9 +41,9 @@ jQuery(document).ready(function(){
 		switch(sl){
 			case "pimage/preporuka.jpg":
 			holder.empty()
-			holder.append('<img src="pimage/green.jpg" width="100%" height="100%">')
+			holder.append('<img src="pimage/green.JPG" width="100%" height="100%">')
 			break;
-			case "pimage/green.jpg":
+			case "pimage/green.JPG":
 			holder.empty()
 			holder.append('<img src="pimage/port.jpg" width="100%" height="100%">')
 			break;
