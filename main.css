@@ -8,11 +8,11 @@ body{
     	background-position: center;
     	background-repeat: no-repeat;
     	background-size: cover;
-	overflow: hidden;
 	box-sizing: border-box;
 }
 #wrapp{
 	margin: 10px 50px;
+	overflow: hidden;
 }
 h1, h2, h3{
 	text-align:center;
