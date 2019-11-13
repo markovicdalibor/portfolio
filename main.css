@@ -5,10 +5,11 @@
 body{
 	background-image: url(img/bg.jpg);
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
 	overflow: hidden;
+	box-sizing: border-box;
 }
 #wrapp{
 	margin: 10px 50px;
